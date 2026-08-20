@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Nwokolo | Frontend Developer </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" 
+     rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body id="#top">
+    <!--Navigation-->
+<header>
+    <nav>
+       
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+<!--Hero section-->
+<section id="home">
+    <div>
+        <p>Hello, I'm</p>
+        <h1>Emmanuel Nwokolo</h1>
+        <h2 class="profession"> <span>Coding Instructor</span>|<span>Frontend Developer</span>  </h2>
+        <p> I love teaching, leading and helping others to learn. I believe learning is a  life-long process</p>
+        <a href="#contact">Let's connect</a>
+    </div>
+    <div>
+        <img src="images/AKJ.png" alt="Emmanuel Nwokolo">
+    </div>
+    </section>
+
+    <!--About Section-->
+    <section id="about">
+        <h2>About Me</h2>
+ <p> I am a coding instructor and aspiring Frontend Developer, 
+    passionate about technology, teaching, leadership and continous learning.</p>
+    <p>I enjoy helping people understand technology and develop useful
+        skills. I believe that success comes through learning, consistency
+        and the willingness to keep improving.
+    </p>
+    </section>
+    <!--Skills section-->
+    <section id="skills">
+        <ul>
+            <li> <img src="images/html.png" alt="html-logo"> </li>
+           
+            <li> <img src="images/css.png" alt="css-logo"></li>
+            <li> <img src="images/scratch.png" alt="scratch-logo"></li>
+            <li><img src="images/microsoft.png" alt="microsoft-logo"></li>
+        </ul>
+    </section>
+
+    <!--Projects Section-->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div>
+            <h3>Business Landing Page</h3>
+            <p> A responsive business landing page created using
+                HTML and CSS </p>
+                <a href="https://akaejuwa.github.io/Businesslandingpage/" target="_blank">View Project</a>
+        </div>
+    </section>
+
+    <!--Services Section-->
+    <section id="Services">
+        <h2>My Services</h2>
+        <div>
+<h3>Website Design</h3>
+<p> I create simple and responsive websites</p>
+        </div>
+        <div>
+            <h3>Landing Page Development</h3>
+            <p> I build landing pages for businesses and personal brands.</p>
+        </div>
+        <div>
+            <h3>Coding lessons</h3>
+            <p> I teach beginners the fundamentals of coding and technology.</p>
+        </div>
+        <div>
+            <h3>Website Maintenanace</h3>
+            <p> I can help update and maintain existing websites.</p>
+        </div>
+    </section>
+    <!--Contact Section-->
+    <section id="contact">
+        <h2>Let's Connect</h2>
+        <p>Have a project or want to learn coding Get in touch.</p>
+        <a href="tel:07063905211">📞 Call Me</a>
+
+<a href="https://wa.me/2347063905211" target="_blank">
+    💬 WhatsApp Me
+</a>
+        <a href="https://www.linkedin.com/in/emmanuel-nwokolo">Linkedin</a>
+    </section>
+
+    <!--Other sections here-->
+<a href="#top" id="topBtn"></a>
+ <!-- Back to Top -->
+    <button id="back-to-top">↑ Top</button>
+
+    <script>
+        // Sticky header and back-to-top button
+        const header = document.querySelector('header');
+        const backTop = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY>20) header.classList.add('scrolled'); 
+            else header.classList.remove('scrolled');
+            if(window.scrollY>300) backTop.style.display='block';
+            else backTop.style.display='none';
+        });
+
+        backTop.addEventListener('click',()=>{ window.scrollTo({top:0,behavior:'smooth'}); });
+    </script>
+
+<script src="script.js"></script>
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2026 Emmanuel Nwokolo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
