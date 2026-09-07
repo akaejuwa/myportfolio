@@ -21,11 +21,11 @@ section{
    padding: 80px 10%;
 }
 
-*/=========NAVIGATION ================*/
+/*=========NAVIGATION ================*/
 
 header{
     background-color:rgba(17,24,39,0.95);
-    box-shadow:0 4px 15px rgba(0,0,0,0.15)
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
     position:sticky;
     top:0;
     z-index:1000;
@@ -73,13 +73,13 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #38bdf8;
     color: #111827;
-    translate: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 */===========HERO SECTION=============*/
 #home{
    min-height:90vh;
-   padding:60px 10%
+   padding:60px 10%;
 
    display:flex;
    justify-content:space-between;
@@ -146,7 +146,7 @@ max-width: 300px;
 
     border-radius: 50%;
 
-    border:5px solid #38bdf8
+    border:5px solid #38bdf8;
 }
 
 /*=========SECTION HEADING============*/
